@@ -1,3 +1,4 @@
 curl -fsSL https://get.docker.com | sudo sh
 echo "$USER -aG docker" | xargs sudo usermod 
-exec $SHELL
+newgrp docker
+docker pull nginx
